@@ -447,10 +447,11 @@
 %   \begin{macrocode}
   \nointerlineskip%
   \ifbeamercolorempty[bg]{block body#1}{%
-    \begin{beamercolorbox}[vmode]{block body#1}}{
+    \begin{beamercolorbox}[vmode]{block body#1}
+    \vspace{0.6\metropolis@parskip}}{
   \ifbeamercolorempty[bg]{block body}{%
     \begin{beamercolorbox}[vmode]{block body#1}%
-  }{%
+    \vspace{0.6\metropolis@parskip}}{%
     \begin{beamercolorbox}[sep=\metropolis@blocksep, vmode]{block body#1}%
     \vspace{-\metropolis@parskip}
   }}%
